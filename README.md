@@ -2,6 +2,13 @@
 
 Provide support of [Felix Becker's PHP Language Server](https://github.com/felixfbecker/php-language-server) in Atom.
 
+WARNING : At now, the plugin doesn't support automatic installation of server. Please use following commands :
+
+```bash
+composer global require felixfbecker/language-server
+composer run-script --working-dir=$HOME/.composer/vendor/felixfbecker/language-server parse-stubs
+```
+
 ## Contributing
 Always feel free to help out!  Whether it's [filing bugs and feature requests](https://github.com/cmizzi/languageserver-php/issues/new) or working on some of the [open issues](https://github.com/cmizzi/languageserver-php/issues), Atom's [contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md) will help get you started while the [guide for contributing to packages](https://github.com/atom/atom/blob/master/docs/contributing-to-packages.md) has some extra information.
 
