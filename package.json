@@ -1,7 +1,7 @@
 {
   "name": "languageserver-php",
   "main": "./lib/languageserver-php",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use Atom languageclient API with felixfbecker's php-language-server PHP package",
   "repository": "https://github.com/cmizzi/languageserver-php",
   "license": "MIT",
