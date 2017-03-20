@@ -1,0 +1,54 @@
+{
+	"name": "languageserver-php",
+	"main": "./lib/languageserver-php",
+	"version": "0.1.0",
+	"description": "Use Atom languageclient API with felixfbecker's php-language-server PHP package",
+	"repository": "https://github.com/cmizzi/languageserver-php",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"activationHooks": ["language-php:grammar-used"],
+	"dependencies": {
+		"atom-languageclient": "git://github.com/atom/atom-languageclient.git"
+	},
+	"consumedServices": {
+		"status-bar": {
+			"versions": {
+				"^1.0.0": "consumeStatusBar"
+			}
+		}
+	},
+	"providedServices": {
+		"autocomplete.provider": {
+			"versions": {
+				"2.0.0": "provideAutocomplete"
+			}
+		},
+		"linter": {
+			"versions": {
+				"1.0.0": "provideLinter"
+			}
+		},
+		"nuclide-outline-view": {
+			"versions": {
+				"0.0.0": "provideOutlines"
+			}
+		},
+		"nuclide-definition-provider": {
+			"versions": {
+				"0.0.0": "provideDefinitions"
+			}
+		},
+		"hyperclick.provider": {
+			"versions": {
+				"0.0.0": "provideHyperclick"
+			}
+		},
+		"nuclide-find-references.provider": {
+			"versions": {
+				"0.0.0": "provideFindReferences"
+			}
+		}
+	}
+}
